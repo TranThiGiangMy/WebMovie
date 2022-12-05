@@ -1,0 +1,64 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(45, 49, 53);
+    color:white;
+    margin: 8px;;
+}
+.main {
+    width: 50%;
+    margin: 50px auto;
+    background-color: rgb(83, 83, 83);
+    padding: 20px;
+}
+.main h1 {
+    text-align: center;
+    animation:  fontcolor 1s infinite;  
+}
+div.create input {
+    width: 90%;
+    padding: 2%;
+    margin: 10px;
+    outline: none;
+    border-radius: 10px;
+}
+div.main div.accept {
+    text-align: center;
+    padding: 10px;
+}
+div.accept input {
+    width: 25%  ;
+    height: 40px;
+    border-radius: 20px;
+    outline: none   ;
+}
+
+.form-info {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 5;
+    border-radius: 10px;   
+    opacity: 0.8;
+}
+.form-announce {   
+   position: absolute;
+   width: 500px;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   background: black;
+}
+.form-announce h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+@keyframes fontcolor {
+    From {
+        color: aqua;
+    }
+    to {
+        color: blue;
+    }
+}

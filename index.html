@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="uft-8" />
+        <link href="index.css" rel="stylesheet" />
+        <link href="image/movie.ico" rel="shortcut icon">
+        <meta name="keywords" content="film ,movie,xem film" />
+        <meta name="description" content="Web xem phim miễn phí" />
+        <meta http-equiv="refresh" content="3000" />
+        <title>Movie</title>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/@ciar4n/izmir@1.0.1/izmir.min.css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="jquery-3.6.0.min.js"></script>
+        <script src="index.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <div class="banner">
+                <div class="banner_title">
+                    <a href="index.html">
+                        <div class="banner_title_image">
+                            <img src="Image/banner1_preview_rev_1.png" />
+                        </div>
+                    </a>
+                </div>
+                <div class="btnSearch">
+                    <input type="text" placeholder="Tìm kiếm" />
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="login">
+                    <div><a class="Login" href="#">Đăng nhập</a></div>
+                    <div><a href="login.html">Đăng ký</a></div>
+                </div>
+            </div>
+            <diV class="bars">
+                <i class="fad fa-bars"></i>
+            </diV>
+            <div class="menutop ">
+                <ul class="menu">
+                    <li class="submenu">
+                        <a href="index.html">Trang chủ</a>
+                    </li>
+                    <li class="submenu">
+                        <a href="#"> Thể loại</a>
+                        <ul class="menu subcontent">
+                            <li><a href="action.html">Hành động</a></li>
+                            <li><a href="#">Khoa học - Viễn tưởng</a></li>
+                            <li><a href="#">Kinh dị</a></li>
+                            <li><a href="#">Hình sự</a></li>
+                            <li><a href="#">Hài hước</a></li>
+                            <li><a href="#">Tâm lý - Tình cảm</a></li>
+                            <li><a href="#">Học đường</a></li>
+                            <li><a href="#">Hoạt hình</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu">
+                        <a href="country.html"> Quốc gia</a>
+                        <ul class="menu subcontent">
+                            <li><a href="#">Việt Nam</a></li>
+                            <li><a href="#">Trung Quốc</a></li>
+                            <li><a href="#">Hàn Quốc</a></li>
+                            <li><a href="#">Ấn Độ</a></li>
+                            <li><a href="#">Âu Mỹ</a></li>
+                            <li><a href="#">Thái Lan</a></li>
+                            <li><a href="#">Nhật Bản</a></li>
+                            <li><a href="#">Tất cả</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu">
+                        <a href="series-film.html"> Phim bộ</a>
+                        <ul class="menu subcontent">
+                        </ul>
+                    </li>
+                    <li class="submenu">
+                        <a href="short-film.html"> Phim lẻ</a>
+                        <ul class="menu subcontent">
+                        </ul>
+                    </li>
+                    <li><a href="hot-film.html"> Phim Hot</a></li>
+                    <li><a href="movie-theaters.html"> Phim chiếu rạp</a></li>
+                    <li><a href="up-coming.html"> Phim sắp chiếu</a></li>
+                </ul>
+            </div>
+        </header>
+        <nav>
+            <div id="demo" class="carousel slide" data-ride="carousel">
+                <div>
+                    <div class="carousel-inner">
+                        
+                        <div class="carousel-item active">
+                            <a class="slide" href="#"><img src="Carouel/EndGame.jpg" alt="avenger"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a class="slide" href="#"><img src="Carouel/Hình sự.jpg" alt="Hình sự"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a class="slide" href="#"><img src="Carouel/Tình cảm.jpg" alt="Tình cảm"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a class="slide" href="#"><img src="Carouel/Hoạt hình.jpg" alt="Hoạt hình"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a class="slide" href="#"><img src="Carouel/Hành động.jpg" alt="Hành động"></a>
+                        </div>
+                    </div>
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <section>
+            <div class="main">
+                <div class="left">
+                    <div class="title">
+                        <h1>Phim chiếu rạp</h1>
+                        <h2><a class="bonus" href="#">Xem thêm <i class="fas fa-caret-right"></i></a></h2>
+                    </div>
+                    <div class="line"></div>
+                    <div class="items">
+                        <a href="Vemon.html">
+                            <figure class="c4-izmir c4-border-bottom-left  c4-gradient-bottom-right">
+                                <img src="movies/venom-2.jpg" />
+                                <figcaption class="c4-layout-center-center">
+                                    <div class="c4-izmir-title-wrapper c4-reveal-up">
+                                        <h6 class="c4-izmir-title">
+                                            VENOM : ĐỐI MẶT TỬ THÙ
+                                        </h6>
+                                    </div>
+                                    <div class="c4-izmir-caption-wrapper c4-reveal-down">
+                                        <p class="c4-izmir-caption">Venom 2 (2021)</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a href="#">
+                            <figure class="c4-izmir c4-border-bottom-left  c4-gradient-bottom-right">
+                                <img src="movies/bố già.jpg" />
+                                <figcaption class="c4-layout-center-center">
+                                    <div class="c4-izmir-title-wrapper c4-reveal-up">
+                                        <h6 class="c4-izmir-title">
+                                            BỐ GIÀ
+                                        </h6>
+                                    </div>
+                                    <div class="c4-izmir-caption-wrapper c4-reveal-down">
+                                        <p class="c4-izmir-caption">Dad, Im Sorry (2021)</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a href="#">
+                            <figure class="c4-izmir c4-border-bottom-left  c4-gradient-bottom-right">
+                                <img src="movies/chi-muoi-ba-3-ngay-sinh-tu.jpg" />
+                                <figcaption class="c4-layout-center-center">
+                                    <div class="c4-izmir-title-wrapper c4-reveal-up">
+                                        <h6 class="c4-izmir-title">
+                                            CHỊ MƯỜI BA: 3 NGÀY SINH TỬ
+                                        </h6>
+                                    </div>
+                                    <div class="c4-izmir-caption-wrapper c4-reveal-down">
+                                        <p class="c4-izmir-caption">Chi Muoi Ba 2 : 3 Ngay Sinh Tu (2020)</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a href="#">
+                            <figure class="c4-izmir c4-border-bottom-left  c4-gradient-bottom-right">
+                                <img src="movies/cuoc-chien-tuong-lai.jpg" />
+                                <figcaption class="c4-layout-center-center">
+                                    <div class="c4-izmir-title-wrapper c4-reveal-up">
+                                        <h6 class="c4-izmir-title">
+                                            CUỘC CHIẾN TƯƠNG LAI
+                                        </h6>
+                                    </div>
+                                    <div class="c4-izmir-caption-wrapper c4-reveal-down">
+                                        <p class="c4-izmir-caption">The Tomorrow War (2021)</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a href="#">
+                            <figure class="c4-izmir c4-border-bottom-left  c4-gradient-bottom-right">
+                                <img src="movies/Ap_phich_Pacific_Rim_Uprising.jpg" />
+                                <figcaption class="c4-layout-center-center">
+                                    <div class="c4-izmir-title-wrapper c4-reveal-up">
+                                        <h6 class="c4-izmir-title">
+                                            ĐẠI CHIẾN THÁI BÌNH DƯƠNG : KHỞI NGHĨA
+                                        </h6>
+                                    </div>
+                                    <div class="c4-izmir-caption-wrapper c4-reveal-down">
+                                        <p class="c4-izmir-caption">Pacific Rim: Uprising (2018)</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a href="#">
+                            <figure class="c4-izmir c4-border-bottom-left  c4-gradient-bottom-right">
+                                <img src="movies/raya-va-rong-than-cuoi-cung.jpg" />
+                                <figcaption class="c4-layout-center-center">
+                                    <div class="c4-izmir-title-wrapper c4-reveal-up">
+                                        <h6 class="c4-izmir-title">
+                                            RAYA VÀ RỒNG THẦN CUỐI CÙNG
+                                        </h6>
+                                    </div>
+                                    <div class="c4-izmir-caption-wrapper c4-reveal-down">
+                                        <p class="c4-izmir-caption">Raya and the Last Dragon (2021)</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a href="#">
+                            <figure class="c4-izmir c4-border-bottom-left  c4-gradient-bottom-right">
+                                <img src="movies/Nhoc-Trum.jpg" />
+                                <figcaption class="c4-layout-center-center">
+                                    <div class="c4-izmir-title-wrapper c4-reveal-up">
+                                        <h6 class="c4-izmir-title">
+                                            NHÓC TRÙM: NỐI NGHIỆP GIA ĐÌNH
+                                        </h6>
+                                    </div>
+                                    <div class="c4-izmir-caption-wrapper c4-reveal-down">
+                                        <p class="c4-izmir-caption">The Boss Baby: Family Business (2021)</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a href="#">
+                            <figure class="c4-izmir c4-border-bottom-left  c4-gradient-bottom-right">
+                                <img src="movies/godzilla-dai-chien-kong.jpg" />
+                                <figcaption class="c4-layout-center-center">
+                                    <div class="c4-izmir-title-wrapper c4-reveal-up">
+                                        <h6 class="c4-izmir-title">
+                                            GODZILLA ĐẠI CHIẾN KONG
+                                        </h6>
+                                    </div>
+                                    <div class="c4-izmir-caption-wrapper c4-reveal-down">
+                                        <p class="c4-izmir-caption">Godzilla vs. Kong (2021)</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+
+                    </div>
+                    <div class="title">
+                        <h1>Phim đề cử</h1>
+                        <h2><a class="bonus" href="#">Xem thêm <i class="fas fa-caret-right"></i></a></h2>
+                    </div>
+                    <div class="line"></div>
+                    <div class="items">
+                        <a href="#">
+                            <figure class="c4-izmir c4-border-bottom-left  c4-gradient-bottom-right">
+                                <img src="movies/Avengers Age of Ultron.jpg" />
+                                <figcaption class="c4-layout-center-center">
+                                    <div class="c4-izmir-title-wrapper c4-reveal-up">
+                                        <h6 class="c4-izmir-title">
+                                            BIỆT ĐỘI SIÊU ANH HÙNG 2: ĐẾ CHẾ ULTRON
+
+                                        </h6>
+                                    </div>
+                                    <div class="c4-izmir-caption-wrapper c4-reveal-down">
+                                        <p class="c4-izmir-caption">Avenger 2: Ultron(2015)</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a href="#">
+                            <figure class="c4-izmir c4-border-bottom-left  c4-gradient-bottom-right">
+                                <img src="movies/bat-man.jpg" />
+                                <figcaption class="c4-layout-center-center">
+                                    <div class="c4-izmir-title-wrapper c4-reveal-up">
+                                        <h6 class="c4-izmir-title">
+                                            BATMAN: KỴ SĨ BÓNG ĐÊM
+                                        </h6>
+                                    </div>
+                                    <div class="c4-izmir-caption-wrapper c4-reveal-down">
+                                        <p class="c4-izmir-caption">The Dark Knight (2008)</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a href="#">
+                            <figure class="c4-izmir c4-border-bottom-left  c4-gradient-bottom-right">
+                                <img src="movies/black-panther-web.jpg" />
+                                <figcaption class="c4-layout-center-center">
+                                    <div class="c4-izmir-title-wrapper c4-reveal-up">
+                                        <h6 class="c4-izmir-title">
+                                            CHIẾN BINH BÁO ĐEN
+                                        </h6>
+                                    </div>
+                                    <div class="c4-izmir-caption-wrapper c4-reveal-down">
+                                        <p class="c4-izmir-caption">Black Panther (2018)</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a href="#">
+                            <figure class="c4-izmir c4-border-bottom-left  c4-gradient-bottom-right">
+                                <img src="movies/blood-shot.jpg" />
+                                <figcaption class="c4-layout-center-center">
+                                    <div class="c4-izmir-title-wrapper c4-reveal-up">
+                                        <h6 class="c4-izmir-title">
+                                            BLOODSHOT
+                                        </h6>
+                                    </div>
+                                    <div class="c4-izmir-caption-wrapper c4-reveal-down">
+                                        <p class="c4-izmir-caption">Bloodshot (2020)</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a href="#">
+                            <figure class="c4-izmir c4-border-bottom-left  c4-gradient-bottom-right">
+                                <img src="movies/end-game.jpg" />
+                                <figcaption class="c4-layout-center-center">
+                                    <div class="c4-izmir-title-wrapper c4-reveal-up">
+                                        <h6 class="c4-izmir-title">
+                                            BIỆT ĐỘI SIÊU ANH HÙNG 4: TÀN CUỘC
+                                        </h6>
+                                    </div>
+                                    <div class="c4-izmir-caption-wrapper c4-reveal-down">
+                                        <p class="c4-izmir-caption">Avengers: Endgame</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a href="#">
+                            <figure class="c4-izmir c4-border-bottom-left  c4-gradient-bottom-right">
+                                <img src="movies/captain-marvel.png" />
+                                <figcaption class="c4-layout-center-center">
+                                    <div class="c4-izmir-title-wrapper c4-reveal-up">
+                                        <h6 class="c4-izmir-title">
+                                            ĐẠI ÚY MARVEL
+                                        </h6>
+                                    </div>
+                                    <div class="c4-izmir-caption-wrapper c4-reveal-down">
+                                        <p class="c4-izmir-caption">Captain Marvel</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a href="#">
+                            <figure class="c4-izmir c4-border-bottom-left  c4-gradient-bottom-right">
+                                <img src="movies/resident-evil.jpg" />
+                                <figcaption class="c4-layout-center-center">
+                                    <div class="c4-izmir-title-wrapper c4-reveal-up">
+                                        <h6 class="c4-izmir-title">
+                                            VÙNG ĐẤT QUỶ DỮ
+                                        </h6>
+                                    </div>
+                                    <div class="c4-izmir-caption-wrapper c4-reveal-down">
+                                        <p class="c4-izmir-caption">Resident Evil</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a href="#">
+                            <figure class="c4-izmir c4-border-bottom-left  c4-gradient-bottom-right">
+                                <img src="movies/insidious.jpg" />
+                                <figcaption class="c4-layout-center-center">
+                                    <div class="c4-izmir-title-wrapper c4-reveal-up">
+                                        <h6 class="c4-izmir-title">
+                                            QUỶ NGHIỆT
+                                        </h6>
+                                    </div>
+                                    <div class="c4-izmir-caption-wrapper c4-reveal-down">
+                                        <p class="c4-izmir-caption">Insidious</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="title">
+                        <h1>Phim lẻ</h1>
+                        <h2><a class="bonus" href="#">Xem thêm <i class="fas fa-caret-right"></i></a></h2>
+                    </div>
+                    <div class="line"></div>
+                    <div class="items">
+                        <a href="#">
+                            <figure class="c4-izmir c4-border-bottom-left  c4-gradient-bottom-right">
+                                <img src="movies/hunter-killer.jpg" />
+                                <figcaption class="c4-layout-center-center">
+                                    <div class="c4-izmir-title-wrapper c4-reveal-up">
+                                        <h6 class="c4-izmir-title">
+                                            MẬT VỤ GIẢI CỨU
+                                        </h6>
+                                    </div>
+                                    <div class="c4-izmir-caption-wrapper c4-reveal-down">
+                                        <p class="c4-izmir-caption">Hunter Killer</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a href="#">
+                            <figure class="c4-izmir c4-border-bottom-left  c4-gradient-bottom-right">
+                                <img src="movies/love-roise.jpg" />
+                                <figcaption class="c4-layout-center-center">
+                                    <div class="c4-izmir-title-wrapper c4-reveal-up">
+                                        <h6 class="c4-izmir-title">
+                                            BỒNG BỘT TUỔI DẬY THÌ
+                                        </h6>
+                                    </div>
+                                    <div class="c4-izmir-caption-wrapper c4-reveal-down">
+                                        <p class="c4-izmir-caption">Love Roise</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a href="#">
+                            <figure class="c4-izmir c4-border-bottom-left  c4-gradient-bottom-right">
+                                <img src="movies/theatre-dead.jpg" />
+                                <figcaption class="c4-layout-center-center">
+                                    <div class="c4-izmir-title-wrapper c4-reveal-up">
+                                        <h6 class="c4-izmir-title">
+                                            THEATRE OF THE DEAD
+                                        </h6>
+                                    </div>
+                                    <div class="c4-izmir-caption-wrapper c4-reveal-down">
+                                        <p class="c4-izmir-caption">Theatre of the Dead</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a href="#">
+                            <figure class="c4-izmir c4-border-bottom-left  c4-gradient-bottom-right">
+                                <img src="movies/transformer.jpg" />
+                                <figcaption class="c4-layout-center-center">
+                                    <div class="c4-izmir-title-wrapper c4-reveal-up">
+                                        <h6 class="c4-izmir-title">
+                                            ROBOT ĐẠI CHIẾN 5: CHIẾN BINH CUỐI CÙNG
+                                        </h6>
+                                    </div>
+                                    <div class="c4-izmir-caption-wrapper c4-reveal-down">
+                                        <p class="c4-izmir-caption">Transformers 5: The Last Knight (2017)</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a href="#">
+                            <figure class="c4-izmir c4-border-bottom-left  c4-gradient-bottom-right">
+                                <img src="movies/your name.jpg" />
+                                <figcaption class="c4-layout-center-center">
+                                    <div class="c4-izmir-title-wrapper c4-reveal-up">
+                                        <h6 class="c4-izmir-title">
+                                            CÂU CHUYỆN VỀ PHÉP MÀU VÀ TÌNH YÊU
+                                        </h6>
+                                    </div>
+                                    <div class="c4-izmir-caption-wrapper c4-reveal-down">
+                                        <p class="c4-izmir-caption">Your Name (2016)</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a href="The-call.html">
+                            <figure class="c4-izmir c4-border-bottom-left  c4-gradient-bottom-right">
+                                <img src="movies/call.jpg" />
+                                <figcaption class="c4-layout-center-center">
+                                    <div class="c4-izmir-title-wrapper c4-reveal-up">
+                                        <h6 class="c4-izmir-title">
+                                            CUỘC GỌI
+                                        </h6>
+                                    </div>
+                                    <div class="c4-izmir-caption-wrapper c4-reveal-down">
+                                        <p class="c4-izmir-caption">The Call</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a href="#">
+                            <figure class="c4-izmir c4-border-bottom-left  c4-gradient-bottom-right">
+                                <img src="movies/g-i-joe-xa-nhan-bao-thu.jpg" />
+                                <figcaption class="c4-layout-center-center">
+                                    <div class="c4-izmir-title-wrapper c4-reveal-up">
+                                        <h6 class="c4-izmir-title">
+                                            G. I. JOE 3: XÃ NHÃN BÁO THÙ
+                                        </h6>
+                                    </div>
+                                    <div class="c4-izmir-caption-wrapper c4-reveal-down">
+                                        <p class="c4-izmir-caption">Snake Eyes: G.I. Joe Origins (2021)</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a href="#">
+                            <figure class="c4-izmir c4-border-bottom-left  c4-gradient-bottom-right">
+                                <img src="movies/fast 9.jpg" />
+                                <figcaption class="c4-layout-center-center">
+                                    <div class="c4-izmir-title-wrapper c4-reveal-up">
+                                        <h6 class="c4-izmir-title">
+                                            QUÁ NHANH QUÁ NGUY HIỂM 9
+                                        </h6>
+                                    </div>
+                                    <div class="c4-izmir-caption-wrapper c4-reveal-down">
+                                        <p class="c4-izmir-caption">Fast & Furious: Furious 9 (2020)</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="title">
+                        <h1>Phim bộ</h1>
+                        <h2><a class="bonus" href="#">Xem thêm <i class="fas fa-caret-right"></i></a></h2>
+                    </div>
+                    <div class="line"></div>
+                    <div class="items">
+                        <a href="#">
+                            <figure class="c4-izmir c4-border-bottom-left  c4-gradient-bottom-right">
+                                <img src="movies/what-if-1628681179.png" />
+                                <figcaption class="c4-layout-center-center">
+                                    <div class="c4-izmir-title-wrapper c4-reveal-up">
+                                        <h6 class="c4-izmir-title">
+                                            CHUYỆN GÌ XẢY RA NẾU NHƯ...?
+                                        </h6>
+                                    </div>
+                                    <div class="c4-izmir-caption-wrapper c4-reveal-down">
+                                        <p class="c4-izmir-caption">What if...?</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a href="#">
+                            <figure class="c4-izmir c4-border-bottom-left  c4-gradient-bottom-right">
+                                <img src="movies/em-la-niem-kieu-hanh-cua-anh.jpg" />
+                                <figcaption class="c4-layout-center-center">
+                                    <div class="c4-izmir-title-wrapper c4-reveal-up">
+                                        <h6 class="c4-izmir-title">
+                                            EM LÀ NIỀM KIÊU HÃNH CỦA ANH
+                                        </h6>
+                                    </div>
+                                    <div class="c4-izmir-caption-wrapper c4-reveal-down">
+                                        <p class="c4-izmir-caption">You Are My Glory (2021)</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a href="#">
+                            <figure class="c4-izmir c4-border-bottom-left  c4-gradient-bottom-right">
+                                <img src="movies/vat-the-bi-nguyen-rua.jpg" />
+                                <figcaption class="c4-layout-center-center">
+                                    <div class="c4-izmir-title-wrapper c4-reveal-up">
+                                        <h6 class="c4-izmir-title">
+                                            VẬT THỂ BỊ NGUYỀN RỦA
+                                        </h6>
+                                    </div>
+                                    <div class="c4-izmir-caption-wrapper c4-reveal-down">
+                                        <p class="c4-izmir-caption">Sorcery Fight (2020)</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a href="#">
+                            <figure class="c4-izmir c4-border-bottom-left  c4-gradient-bottom-right">
+                                <img src="movies/Jolt.jpg" />
+                                <figcaption class="c4-layout-center-center">
+                                    <div class="c4-izmir-title-wrapper c4-reveal-up">
+                                        <h6 class="c4-izmir-title">
+                                            GIẬT ĐIỆN
+                                        </h6>
+                                    </div>
+                                    <div class="c4-izmir-caption-wrapper c4-reveal-down">
+                                        <p class="c4-izmir-caption">Jolt (2021)</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a href="#">
+                            <figure class="c4-izmir c4-border-bottom-left  c4-gradient-bottom-right">
+                                <img src="movies/du-an-ufo-tuyet-mat-he-lo-bi-an.jpg" />
+                                <figcaption class="c4-layout-center-center">
+                                    <div class="c4-izmir-title-wrapper c4-reveal-up">
+                                        <h6 class="c4-izmir-title">
+                                            DỰ ÁN UFO TUYỆT MẬT: HÉ LỘ BÍ ẨN
+                                        </h6>
+                                    </div>
+                                    <div class="c4-izmir-caption-wrapper c4-reveal-down">
+                                        <p class="c4-izmir-caption">Top Secret Ufo Projects: Declassified (2021)</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a href="#">
+                            <figure class="c4-izmir c4-border-bottom-left  c4-gradient-bottom-right">
+                                <img src="movies/nu-sieu-nhan-phan-5.jpg" />
+                                <figcaption class="c4-layout-center-center">
+                                    <div class="c4-izmir-title-wrapper c4-reveal-up">
+                                        <h6 class="c4-izmir-title">
+                                            NỮ SIÊU NHÂN (PHẦN 5)
+                                        </h6>
+                                    </div>
+                                    <div class="c4-izmir-caption-wrapper c4-reveal-down">
+                                        <p class="c4-izmir-caption">Supergirl Season 5 (2019)</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a href="#">
+                            <figure class="c4-izmir c4-border-bottom-left  c4-gradient-bottom-right">
+                                <img src="movies/the flash.jpg" />
+                                <figcaption class="c4-layout-center-center">
+                                    <div class="c4-izmir-title-wrapper c4-reveal-up">
+                                        <h6 class="c4-izmir-title">
+                                            NGƯỜI HÙNG TIA CHỚP (PHẦN 6)
+                                        </h6>
+                                    </div>
+                                    <div class="c4-izmir-caption-wrapper c4-reveal-down">
+                                        <p class="c4-izmir-caption">The Flash (Season 6) (2019)</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a href="#">
+                            <figure class="c4-izmir c4-border-bottom-left  c4-gradient-bottom-right">
+                                <img src="movies/poster-1623569001969-loki-2021-poster.jpeg" />
+                                <figcaption class="c4-layout-center-center">
+                                    <div class="c4-izmir-title-wrapper c4-reveal-up">
+                                        <h6 class="c4-izmir-title">
+                                            LOKI THẦN LỪA LỌC (PHẦN 1)
+                                        </h6>
+                                    </div>
+                                    <div class="c4-izmir-caption-wrapper c4-reveal-down">
+                                        <p class="c4-izmir-caption">Loki (Season 1) (2021)</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="flim_content">
+                        <div class="film_list">
+                            <div class="title">
+                                <h1>Phim đánh giá cao</h1>
+                            </div>
+                            <div class="lines"></div>
+                            <div class="film_list_color">
+                                <a href="#">
+                                    <div class="film_item">
+                                        <div class="film_poster"><img src="movies/suicide-squad-diep-vu-cam-tu.jpg" />
+                                        </div>
+                                        <div class="film_detail">
+                                            <span>Suicide Squad</span>
+                                            <span>Lượt xem: 191421</span>
+                                            <span>Đánh giá: 7.9 IMDb </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="film_list_color">
+                                <a href="#">
+                                    <div class="film_item">
+                                        <div class="film_poster"><img src="movies/what-if-1628681179.png" /></div>
+                                        <div class="film_detail">
+                                            <span>what if</span>
+                                            <span>Lượt xem: 290987</span>
+                                            <span>Đánh giá: 8.7 IMDb</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="film_list_color">
+                                <a href="#">
+                                    <div class="film_item">
+                                        <div class="film_poster"><img src="movies/venom-2.jpg" /></div>
+                                        <div class="film_detail">
+                                            <span>Venom 2</span>
+                                            <span>Lượt xem: 309192</span>
+                                            <span>Đánh giá: 9.5 IMDb</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="film_list_color">
+                                <a href="#">
+                                    <div class="film_item">
+                                        <div class="film_poster"><img src="movies/end-game.jpg" /></div>
+                                        <div class="film_detail">
+                                            <span>Avengers: Endgame</span>
+                                            <span>Lượt xem: 329449</span>
+                                            <span>Đánh giá: 8.8 IMDb</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="film_list_color">
+                                <a href="#">
+                                    <div class="film_item">
+                                        <div class="film_poster"><img src="movies/fast 9.jpg" /></div>
+                                        <div class="film_detail">
+                                            <span>Fast & Furious 9 (F9)</span>
+                                            <span>Lượt xem: 440572</span>
+                                            <span>Đánh giá: 5.5 IMDb</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flim_content">
+                        <div class="film_list">
+                            <div class="title">
+                                <h1>Phim lẻ hot nhất tuần</h1>
+                            </div>
+                            <div class="lines"></div>
+                            <div class="film_list_color">
+                                <a href="#">
+                                    <div class="film_item">
+                                        <div class="film_poster"><img src="movies/g-i-joe-xa-nhan-bao-thu.jpg" /></div>
+                                        <div class="film_detail">
+                                            <span>G. I. JOE 3: XÀ NHÃN BÁO THÙ</span>
+                                            <span>Lượt xem: 44172</span>
+                                            <span>Đánh giá: 5.7 IMDb</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="film_list_color">
+                                <a href="#">
+                                    <div class="film_item">
+                                        <div class="film_poster"><img src="cartoons/dragon.jpg" /></div>
+                                        <div class="film_detail">
+                                            <span>Cuộc Chiến Của Các Vị Thần</span>
+                                            <span>Lượt xem: 903142</span>
+                                            <span>Đánh giá: 7.4 IMDb</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="film_list_color">
+                                <a href="#">
+                                    <div class="film_item">
+                                        <div class="film_poster"><img src="movies/cuoc-chien-tuong-lai.jpg" /></div>
+                                        <div class="film_detail">
+                                            <span>The Tomorrow War</span>
+                                            <span>Lượt xem: 249587</span>
+                                            <span>Đánh giá: 6.7 IMDb</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="film_list_color">
+                                <a href="#">
+                                    <div class="film_item">
+                                        <div class="film_poster"><img src="movies/bố già.jpg" /></div>
+                                        <div class="film_detail">
+                                            <span>BỐ GIÀ</span>
+                                            <span>Lượt xem: 2039257</span>
+                                            <span>Đánh giá: 9.6 IMDb</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="film_list_color">
+                                <a href="#">
+                                    <div class="film_item">
+                                        <div class="film_poster"><img src="movies/bat-man.jpg" /></div>
+                                        <div class="film_detail">
+                                            <span>Batman 2: The Dark Knight</span>
+                                            <span>Lượt xem: 876942</span>
+                                            <span>Đánh giá: 9.0 IMDb</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scrollTop">
+                <a href="#" class="backTop"><i class="fas fa-arrow-alt-circle-up"></i></a>
+            </div>
+        </section>
+        <div class="box">
+            <div class="form-login">
+                <h1>Đăng nhập</h1>
+                <input type="text" name="" placeholder="Tài khoản">
+                <input type="password" name="" placeholder="Mật khẩu">
+                <input class="knot" type="submit" name="" value="Login">
+            </div>
+        </div>
+        <footer>
+            <div class="content">
+                <div class="contact">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div>
+                    <ul class="info">
+                        <li><a href="#">Về chúng tối</a></li>
+                        <li><a href="contact.html">Liên hệ</a></li>
+                        <li><a href="#">Địa chỉ</a></li>
+                        <li><a href="#">Gửi phản hồi</a></li>
+                        <li><a href="#">Về chúng tôi</a></li>
+                    </ul>
+                </div>
+                <div> Copyright &copy; 2021 Huya PTE. LTD. All Rights Reserved</div>
+            </div>
+        </footer>
+    </body>
+
+</html>
